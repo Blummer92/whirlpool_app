@@ -1,0 +1,60 @@
+/**
+ *
+ * This file was generated with Adobe XD React Exporter
+ * Exporter for Adobe XD is written by: Johannes Pichler <j.pichler@webpixels.at>
+ *
+ **/
+
+import {storiesOf} from "@storybook/react";
+import {action} from "@storybook/addon-actions";
+
+import Howmanybendsdoesyourexhaustpipehave from "./HowmanybendsdoesyourexhaustpipehaveComponent";
+
+export const myProps = {
+    id: "1",
+    className: "mySampleClass",
+    sampleString: "Test Task",
+    sampleDate: new Date(2018, 0, 1, 9, 0)
+};
+
+export const actions = {
+    onActionOne: action("onActionOne"),
+    onActionTwo: action("onActionTwo")
+};
+
+storiesOf("Howmanybendsdoesyourexhaustpipehave", module)
+    .add("default", () => (
+        < Howmanybendsdoesyourexhaustpipehave
+{...
+    myProps
+}
+{...
+    actions
+}
+/>
+))
+.
+add("pinned", () => (
+    < Howmanybendsdoesyourexhaustpipehave
+{...
+    myProps
+}
+pinned = {true}
+{...
+    actions
+}
+/>
+))
+.
+add("archived", () => (
+    < Howmanybendsdoesyourexhaustpipehave
+{...
+    myProps
+}
+archived = {true}
+{...
+    actions
+}
+/>
+))
+;
